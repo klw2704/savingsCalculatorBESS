@@ -1,0 +1,117 @@
+#wrapper {
+    background-color: #fce8ef; 
+  }
+  #page-content-wrapper {
+    background-color:white; 
+  }
+  
+  a {color: #005050; text-decoration: underline;}
+  
+  #menu-toggle { background: #fce8ef;}
+  
+     #leftcol { width: 20%; min-width: 12em; }
+     #maincol { min-width: 50em; }
+  
+    
+  #leftcol { margin-3px; vertical-align: top; }
+  #leftcol ul { list-style:none; padding:0px; margin:0px; }
+  #leftcol li { margin:0px; padding-left: 6px; padding-top:6px }
+  
+  #pagetitle {
+    color: #BA4BAD;
+    font-weight: normal;
+    text-align: left;
+   }
+  #pagebottom {margin: 0px; padding: 0.5em; width: 100%; font-size: smaller;
+        border-top: 2px solid #C951BC;
+   }
+  
+  #pagetop {
+   padding-left: 0;
+  }
+  #sidebar {
+   padding: 10px;
+  }
+  #sidebar-wrapper {
+    border-right: 2px solid #C951BC;
+    background-color: #fce8ef; 
+  }
+  
+  #pagebody {
+        padding: 10px; 
+        background: white; 
+  }
+  #pagebody table,p,ul,ol { max-width: 50em; }
+  #pagebody li { padding: 0.3em; }
+  .textblock { max-width: 50em; }
+  
+  .ref { font-size: 0.8em; color: #858866; }
+  .smallb { font-size: 0.5em; }
+  
+  table.ruled {
+        border-collapse: collapse;
+  }
+  .ruled td,th {
+        border-collapse: collapse;
+        margin: 0;
+        border: thin solid #C3C3C3;
+        padding: 2px;
+        vertical-align: top;
+  }
+  
+  .spaced td,th {
+        padding: 4px;
+  }
+  .ruled th {
+        background-color: #C4CCAE;
+  }
+  .collapsible {
+        margin-left: 2em;
+  }
+  
+  .lowlight p {
+        padding: 3px;
+        /*background-color: #E5EECC;*/
+        background-color: #C4CCAE;
+  }
+  nav > ul, ul.fwd {
+      margin-left:0;
+      padding-left:0;
+      list-style:none;
+  }
+  
+  ul.nav1 {
+         list-style: none;
+  }
+  nav li, li.fwd {
+      padding-left:0;
+      margin:0 0 0.4em 0;
+  }
+  nav .divider, .fwd.divider {
+    margin-top: 3px;
+    padding-top: 3px;
+    border-top: solid 1px #e5e5e5;
+  }
+  
+  .menubar {
+       background-color: #BA4BAD;
+      display: block;
+      width: 20px;	  
+      height: 2px;
+      margin: 5px 0;
+  }
+  
+  @media print { 
+     /* no sidebar and put the main section in the whole width regardless of toggled. Doesn't work on chrome */
+     #wrapper, #wrapper.toggled {padding-left: 0 !important;}
+     #sidebar-wrapper, #wrapper.toggled #sidebar-wrapper { width: 0 !important;}
+     #page-content-wrapper, #wrapper.toggled #page-content-wrapper {
+          position: relative !important;
+          margin-right: 0 !important;
+      }
+     #menu-toggle { display: none !important;}
+     .menubar { display: none !important;}
+  }
+  
+  /* .hm-calc td { padding: 2px}; */
+  

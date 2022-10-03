@@ -1,0 +1,15 @@
+/* app css stylesheet */
+
+body {
+    padding-top: 20px;
+  }
+  
+  .namefield { 
+    width: 14em;
+  }
+  .numfield { 
+    width: 5em;
+    margin-left: 3em;
+    margin-right: 0em;
+  }
+  
